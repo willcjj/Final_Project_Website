@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link rel="stylesheet" type="text/css" href="gallery.css" />
+        
+        
+        <title>Gallery</title>
+        
+        <script>
+            var slideIndex = [1,1];
+            var slideId = ["mySlides1", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+
+            function showSlides(n, no) {
+              var i;
+              var x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+        </script>
+    </head>
+    
+    <body>
+        
+        <div class="header">
+            <h1>Sweet Bakery</h1>
+        </div>
+        
+        <div class="nav">
+            <div class="l">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="l">
+                <a href="about.html">About</a>
+            </div>
+            <div class="l">
+                <a href="menu.html">Menu</a>
+            </div>
+            <div class="l">
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <div class="l">
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        
+        <div class="slideshow-container">
+<!--
+            <div class="mySlides1">
+                <img src="a.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+                <img src="b.jpg" style="width:100%">
+            </div>
+-->
+
+<!--
+            <div class="mySlides1">
+                <img src="c.jpg" style="width:100%">
+            </div>
+-->
+            <div class="mySlides1">
+                <img src="d.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+                <img src="e.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+                <img src="f.jpg" style="width:100%">
+            </div>
+            <div class="mySlides1">
+                <img src="g.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+                <img src="h.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+                <img src="i.jpg" style="width:100%">
+            </div>
+            <div class="mySlides1">
+                <img src="j.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+                <img src="k.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+                <img src="l.jpg" style="width:100%">
+            </div>
+            <div class="mySlides1">
+                <img src="m.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="mySlides2">
+                <img src="aa.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides2">
+                <img src="bb.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides2">
+                <img src="cc.jpg" style="width:100%">
+            </div>
+            <div class="mySlides2">
+                <img src="dd.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides2">
+                <img src="ee.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides2">
+                <img src="ff.jpg" style="width:100%">
+            </div>
+            <div class="mySlides2">
+                <img src="gg.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides2">
+                <img src="hh.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides2">
+                <img src="ii.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides2">
+                <img src="b.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+        
+        
+        <div class="footer">
+            <p>Phone: 123-456-4444<br> Address: 123 Hello St., Chapel Hill, NC 12345<br> Email: 123445@gmail.com<br>
+            </p>
+<!--
+            <p>Phone: 123-456-4444<br>
+            Address: 123 hello St, Chapel Hill, NC 12345<br>
+            Email:<a href="123445@gmail.com">123445@gmail.com</a></p>
+-->
+        </div>
+    
+    </body>
+
+</html>

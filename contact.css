@@ -1,0 +1,149 @@
+/*For Mobile*/
+
+body {
+    display: grid;
+    background-color: #cfbeae;
+    color: #2d0a08;
+    text-align: center;
+    min-width: 100%;
+    min-height: 100vh;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto 100px;
+    grid-template-areas: 'header' 'nav' 'middle' 'footer';
+
+}
+
+.header {
+    display: grid
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+}
+
+h2,
+h3,
+label {
+    font-family: 'Playball', cursive;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+p {
+    font-family: 'Playball', cursive;
+    font-size: 20px;
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+    background-color: #e7e8e2;
+    align-content: center;
+    justify-content: center;
+    background-image: url("background.jpg");
+    background-size: 50% 100%;
+    background-repeat: space;
+}
+
+.nav {
+    display: grid;
+    grid-area: nav;
+    background-color: #6b2f21;
+    color: #e7e8e2;
+    border: 3px solid #cfbeae;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.l {
+    display: grid;
+    align-content: center;
+    border: 3px solid #cfbeae;
+}
+
+a {
+    color: #e7e8e2;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+a:link {
+    color: #e7e8e2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2d0a08;
+    text-decoration: none;
+}
+
+a:active {
+    color: #e7e8e2;
+    text-decoration: none;
+}
+
+.middle {
+    display: grid;
+    grid-area: middle;
+    background-color: #2d0a08;
+    color: #c3dde1;
+    border: 3px solid #c3dde1;
+    justify-content: space-around;
+}
+
+.form {
+    margin: 5px;
+}
+
+.btn {
+    background-color: #6b2f21;
+    color: #c3dde1;
+    border-color: #c3dde1;
+}
+
+.btn:hover {
+    background-color: #cfbeae;
+    color: #2d0a08;
+    border-color: #2d0a08;
+}
+
+.container {
+    margin: 5px;
+}
+
+.footer {
+    display: grid;
+    grid-area: footer;
+    background-color: #e7e8e2;
+    font-family: 'Share', cursive;
+}
+
+@media only screen and (min-width: 600px) {
+    /*    For Tablet*/
+    body {
+        grid-template-columns: auto;
+        grid-template-rows: 200px 80px auto auto 100px;
+        grid-template-areas: 'header' 'nav' 'middle' 'footer';
+    }
+    .nav {
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /*    For Desktop*/
+    body {
+        grid-template-columns: auto;
+        grid-template-rows: 200px 80px auto auto 100px;
+    }
+}
