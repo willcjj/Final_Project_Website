@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Allan|Lobster|Playball|Share|Roboto+Slab" rel="stylesheet">
+
+    <title>COMP 126 Final Project</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Sweet Bakery</h1>
+        Welcome! Today is 
+        <script>
+            // Array of day names
+            var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday",
+                            "Thursday","Friday","Saturday");
+
+            // Array of month Names
+            var monthNames = new Array(
+            "January","February","March","April","May","June","July",
+            "August","September","October","November","December");
+
+            var now = new Date();
+            document.write(dayNames[now.getDay()] + ", " + 
+            monthNames[now.getMonth()] + " " + 
+            now.getDate() + ", " + now.getFullYear());
+        </script>
+    </div>
+
+    <div class="nav">
+        <div class="l">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="l">
+            <a href="about.html">About</a>
+        </div>
+        <div class="l">
+            <a href="menu.html">Menu</a>
+        </div>
+        <div class="l">
+            <a href="gallery.html">Gallery</a>
+        </div>
+        <div class="l">
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="left">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Welcome!</h2>
+                <h6 class="card-subtitle text-muted"><i>~Sweet~</i></h6>
+                     <p class="card-text">
+                    <br>Welcome to Sweet Bakery!
+                </p>
+                <br>
+                <hr/>
+                <br>
+                <p class="card-text">
+                    Please come in to enjoy our highly rated desserts!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="right">
+        <img src="n.jpg" alt="Naked Rose Cake" height="500px" style="margin: 5px;">
+    </div>
+
+    <div class="footer">
+        <p style="font-family: 'Roboto Slab', serif">Phone: 123-456-4444<br> Address: 123 Hello St., Chapel Hill, NC 12345<br> Email: 123445@gmail.com<br>
+        </p>
+    </div>
+
+</body>
+
+</html>
