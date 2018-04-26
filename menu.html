@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         
         <link rel="stylesheet" type="text/css" href="index.css" />
+        <link href="https://fonts.googleapis.com/css?family=Allan|Lobster|Playball|Share|Roboto+Slab" rel="stylesheet">
 <!--        <link rel="stylesheet" type="text/css" href="menu.css" />-->
         <title>Menu</title>
     </head>
@@ -12,6 +13,22 @@
     <body>
         <div class="header">
             <h1>Sweet Bakery</h1>
+            Welcome! Today is
+            <script>
+                // Array of day names
+                var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday",
+                                "Thursday","Friday","Saturday");
+
+                // Array of month Names
+                var monthNames = new Array(
+                "January","February","March","April","May","June","July",
+                "August","September","October","November","December");
+
+                var now = new Date();
+                document.write(dayNames[now.getDay()] + ", " + 
+                monthNames[now.getMonth()] + " " + 
+                now.getDate() + ", " + now.getFullYear());
+            </script>
         </div>
         
         <div class="nav">
@@ -34,7 +51,8 @@
         
         
         <div class="left" style="background-image: url(leftBackground.jpg)">
-            <h2>Cake Menu</h2>
+            <h2 style="border-bottom: 1px dotted lightblue">Cake Menu</h2>
+            <br>
             <div class="c item1">
                 <h3>Guinness</h3>
                 <p>A dense chocolate stout cake filled with Jameson Whiskey ganache and Bailey’s buttercream</p>  
@@ -70,7 +88,8 @@
         </div>
             
             <div class="right" style="background-image: url(menuBackground.jpg)">
-                <h2>Muffins</h2>
+                <h2 style="border-bottom: 1px dotted lightblue">Muffins</h2>
+                <br>
                 <div class="c m1">
                     <h3>Monday</h3>
                     <p>blueberry / espresso chocolate chip</p>  
@@ -105,7 +124,7 @@
         
         <br><br><br><br>
         <div class="footer">
-            <p>Phone: 123-456-4444<br> Address: 123 Hello St., Chapel Hill, NC 12345<br> Email: 123445@gmail.com<br>
+            <p style="font-family: 'Roboto Slab', serif">Phone: 123-456-4444<br> Address: 123 Hello St., Chapel Hill, NC 12345<br> Email: 123445@gmail.com<br>
             </p>
 <!--
             <p>Phone: 123-456-4444<br>

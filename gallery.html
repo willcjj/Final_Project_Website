@@ -6,6 +6,7 @@
         
         <link rel="stylesheet" type="text/css" href="index.css" />
         <link rel="stylesheet" type="text/css" href="gallery.css" />
+        <link href="https://fonts.googleapis.com/css?family=Allan|Lobster|Playball|Share|Roboto+Slab" rel="stylesheet">
         
         
         <title>Gallery</title>
@@ -37,6 +38,22 @@
         
         <div class="header">
             <h1>Sweet Bakery</h1>
+            Welcome! Today is 
+            <script>
+                // Array of day names
+                var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday",
+                                "Thursday","Friday","Saturday");
+
+                // Array of month Names
+                var monthNames = new Array(
+                "January","February","March","April","May","June","July",
+                "August","September","October","November","December");
+
+                var now = new Date();
+                document.write(dayNames[now.getDay()] + ", " + 
+                monthNames[now.getMonth()] + " " + 
+                now.getDate() + ", " + now.getFullYear());
+            </script>
         </div>
         
         <div class="nav">
@@ -159,7 +176,7 @@
         
         
         <div class="footer">
-            <p>Phone: 123-456-4444<br> Address: 123 Hello St., Chapel Hill, NC 12345<br> Email: 123445@gmail.com<br>
+            <p style="font-family: 'Roboto Slab', serif">Phone: 123-456-4444<br> Address: 123 Hello St., Chapel Hill, NC 12345<br> Email: 123445@gmail.com<br>
             </p>
 <!--
             <p>Phone: 123-456-4444<br>

@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" type="text/css" href="index.css" />
     
-    <link href="https://fonts.googleapis.com/css?family=Allan|Lobster|Playball|Share" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allan|Lobster|Playball|Share|Roboto+Slab" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -19,14 +19,22 @@
 <body>
     <div class="header">
         <h1>Sweet Bakery</h1>
-<!--
-        <p id="demo"></p>
+        Welcome! Today is 
+            <script>
+                // Array of day names
+                var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday",
+                                "Thursday","Friday","Saturday");
 
-<script>
-var d = new Date();
-document.getElementById("demo").innerHTML = d;
-</script>
--->
+                // Array of month Names
+                var monthNames = new Array(
+                "January","February","March","April","May","June","July",
+                "August","September","October","November","December");
+
+                var now = new Date();
+                document.write(dayNames[now.getDay()] + ", " + 
+                monthNames[now.getMonth()] + " " + 
+                now.getDate() + ", " + now.getFullYear());
+            </script>
     </div>
 
     <div class="nav">
@@ -71,7 +79,7 @@ document.getElementById("demo").innerHTML = d;
     </div>
 
     <div class="footer">
-        <p>Phone: 123-456-4444<br> Address: 123 Hello St., Chapel Hill, NC 12345<br> Email: 123445@gmail.com<br>
+        <p  style="font-family: 'Roboto Slab', serif">Phone: 123-456-4444<br> Address: 123 Hello St., Chapel Hill, NC 12345<br> Email: 123445@gmail.com<br>
         </p>
         <!--
             <p>Phone: 123-456-4444<br>
