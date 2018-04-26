@@ -18,6 +18,11 @@
 </head>
 
 <body>
+    <script>
+    function myFunction() {
+        alert("Thank you!");
+    }
+    </script>
 
     <div class="header">
         <h1>Sweet Bakery</h1>
@@ -60,7 +65,7 @@
     <div class="middle">
         <h2>Contact Us</h2>
         <p>Please email us with any questions, requests, or suggestions!</p>
-        <form method="post" action="secure_email_code.php">
+        <form>
 
             <div class="row">
                 <div class="col-md-6">
@@ -103,7 +108,8 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <input type="submit" class="btn" name="submit" value="Send!">
+<!--                    <input type="submit" class="btn" name="submit" value="Send! onclick="myFunction()">-->
+                    <button class="btn" onclick="myFunction()">Send!</button>
                 </div>
             </div>
         </form>
